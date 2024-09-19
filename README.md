@@ -193,9 +193,9 @@
             chmod 700  <your_ssh_key_path>.key
 
    1. Connect to the compute instance you've created earlier today by running the following command on your shell:
-        - Using [(Using Cloud Shell)](/compute.md)
-        - Using  [(Using Windows)](/compute.md)
-        - Using  [(Using Linux)](/compute.md)
+        - [Using Cloud Shell](/compute.md)
+        - [Using Windows](/compute.md)
+        - [Using Linux](/compute.md)
     
             sudo ssh  -i <your_ssh_key_path>.key opc@<instance_ip>
 
