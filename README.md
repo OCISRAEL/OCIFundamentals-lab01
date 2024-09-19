@@ -194,9 +194,9 @@
 
    1. Connect to the compute instance you've created earlier today by running the following command on your shell:
 
-        (*) Using Cloud Shell
-        (*) Using Linux
-        (*) Using Linux
+        (*) Using Cloud Shell [(Click here to create)](/compute.md)
+        (*) Using Linux [(Click here to create)](/compute.md)
+        (*) Using Linux [(Click here to create)](/compute.md)
     
             sudo ssh  -i <your_ssh_key_path>.key opc@<instance_ip>
 
