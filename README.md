@@ -193,25 +193,24 @@
             chmod 700  <your_ssh_key_path>.key
 
    1. Connect to the compute instance you've created earlier today by running the following command on your shell:
-
-        (*) Using Cloud Shell [(Click here to create)](/compute.md)
-        (*) Using Linux [(Click here to create)](/compute.md)
-        (*) Using Linux [(Click here to create)](/compute.md)
+        - Using [(Using Cloud Shell)](/compute.md)
+        - Using  [(Using Windows)](/compute.md)
+        - Using  [(Using Linux)](/compute.md)
     
             sudo ssh  -i <your_ssh_key_path>.key opc@<instance_ip>
 
     
-   3. Switch to root user by running the following command:    
+   2. Switch to root user by running the following command:    
 
             sudo su
 
-   4. After you connected to your machine, install git by running the following command:    
+   3. After you connected to your machine, install git by running the following command:    
 
             yum install git
 
-   5. Now, clone the git repository by running the following command:    
+   4. Now, clone the git repository by running the following command:    
 
-            git clone https://github.com/OCI-IL/OCIFundamentals-lab-01
+            git clone https://github.com/OCISRAEL/OCIFundamentals-lab01
 
 
 6. **STEP 6 : Edit The Config File**
