@@ -1,0 +1,7 @@
+{
+
+  "CONNECTION_STRING": "<DB_CONNECTION_STRING>",
+  "bucketName": "<BUCKET_NAME>",
+  "coll_name": "<COLLECTION_NAME>"
+
+}
