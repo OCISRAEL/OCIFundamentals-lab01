@@ -193,11 +193,13 @@
             chmod 700  <your_ssh_key_path>.key
 
    1. Connect to the compute instance you've created earlier today by running the following command on your shell:
+
+        (*) Using Cloud Shell
+        (*) Using Linux
+        (*) Using Linux
     
             sudo ssh  -i <your_ssh_key_path>.key opc@<instance_ip>
-      (*) Using Cloud Shell
-      (*) Using Windows
-      (*) Using Linux
+
     
    3. Switch to root user by running the following command:    
 
