@@ -195,9 +195,9 @@
    1. Connect to the compute instance you've created earlier today by running the following command on your shell:
     
             sudo ssh  -i <your_ssh_key_path>.key opc@<instance_ip>
-          * Using Cloud Shell
-          * Using Windows
-          * Using Linux
+      (*) Using Cloud Shell
+      (*) Using Windows
+      (*) Using Linux
     
    3. Switch to root user by running the following command:    
 
