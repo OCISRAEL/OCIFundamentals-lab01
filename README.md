@@ -195,16 +195,19 @@
    1. Connect to the compute instance you've created earlier today by running the following command on your shell:
     
             sudo ssh  -i <your_ssh_key_path>.key opc@<instance_ip>
+          * Using Cloud Shell
+          * Using Windows
+          * Using Linux
     
-   2. Switch to root user by running the following command:    
+   3. Switch to root user by running the following command:    
 
             sudo su
 
-   3. After you connected to your machine, install git by running the following command:    
+   4. After you connected to your machine, install git by running the following command:    
 
             yum install git
 
-   4. Now, clone the git repository by running the following command:    
+   5. Now, clone the git repository by running the following command:    
 
             git clone https://github.com/OCI-IL/OCIFundamentals-lab-01
 
