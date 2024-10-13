@@ -5,7 +5,7 @@
 
 1. Log in to the OCI Console and click on the **OCI Cloud Shell** icon to open the Cloud Shell console.
     
-    ![drawing](./SS/ssh_cloud_shell/1.png)
+    ![drawing](../SS/ssh_cloud_shell/1.png)
 
 2. Click **Cloud Shell**.
 
