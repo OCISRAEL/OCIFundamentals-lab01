@@ -1,4 +1,4 @@
-# Connect to instance from Windows a machine
+# Connect to instance from a Windows machine
 
 ### In this approach, we will connect to the Linux instance using the OCI Cloud Shell provided by OCI and connect to the instance using the Public IP address.
 
