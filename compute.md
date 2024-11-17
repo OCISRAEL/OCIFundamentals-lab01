@@ -3,15 +3,15 @@
 
     ![drawing](./SS/compute/1.png)
 
-2. Click on **Create Instance**
+2. Click **Create Instance**
 
     ![drawing](./SS/compute/2.png)
 
-3. Click on **Enter Instance Name as you wish**
+3. Enter a name for the instance
 
     ![drawing](./SS/compute/3.png)
 
-4. Pick Oracle Linux and choose the amount of oCPU required.
+4. In the **Image and Shape** section, keep the default **Oracle Linux** image and the **VM.Standard.E4.Flex** shape
 
     ![drawing](./SS/compute/4.png)
 
