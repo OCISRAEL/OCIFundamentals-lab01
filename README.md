@@ -140,7 +140,7 @@
 
     10. Click **Database actions** and then **View all database actions**.
 
-        ![drawing](./SS/step2/mongodb_api_connection_string.png)
+        ![drawing](./SS/step2/db_actions_button.png)
 
     11. Now, let's add a new collection to your database by clicking &nbsp; **{} JSON** &nbsp; under the Development section and then **Open**.
 
