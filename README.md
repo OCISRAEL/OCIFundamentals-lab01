@@ -122,15 +122,15 @@
 
     4. Wait until your new Autonomous Database's status changes from Provisioning to Available.
 
-    5. Click **Database actions** and wait for the page to finish initializing and to appear.
+    5.  Select the **Tool configuration** tab on the Autonomous Database details page.
 
-        ![drawing](./SS/step2/db_actions_button.png)
+        ![drawing](./SS/step2/tool_configuration.png)
 
-    6. Scroll down the Database Actions page until you find the Related Services section, then click **ORACLE DATABASE API FOR MONGODB**
+    6. Scroll down the Tool configuration page until you find the **MongoDB API**.
 
-        ![drawing](./SS/step2/mongodb_api_button.png)
+        ![drawing](./SS/step2/mongodb_api_connection_string.png)
 
-    7. Copy the connection string for port 27017 and save it - you'll need it later
+    8. Copy the connection string under **Public access URL** and save it - you'll need it later.
 
        Instead of *[user:password@]* enter your database username and password (without the '[]' with the @)
 
@@ -138,9 +138,11 @@
 
        It should looks like: *mongodb://**user**:**password**@G0D09E...F.adb.il-jerusalem-1.oraclecloudapps.com:27017/**user**?authMechanism...true*
 
-        ![drawing](./SS/step2/connection_string.png)
+    10. Click **Database actions** and then **View all database actions**.
 
-    8. Now, let's add a new collection to your database by clicking &nbsp; **{} JSON** &nbsp; under the Development section
+        ![drawing](./SS/step2/mongodb_api_connection_string.png)
+
+    11. Now, let's add a new collection to your database by clicking &nbsp; **{} JSON** &nbsp; under the Development section and then **Open**.
 
         ![drawing](./SS/step2/open_json_db.png)
 
