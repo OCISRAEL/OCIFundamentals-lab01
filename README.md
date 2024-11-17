@@ -65,8 +65,6 @@
             3. **Compartment:** Select your compartment
             4. Switch the **Show manual editor** toggle on and add the following policies:
 
-                    Allow dynamic-group <your_dg_name> to use buckets in tenancy
-
                     Allow dynamic-group <your_dg_name> to manage object-family in tenancy
                     
             * ***The new policies will go into effect typically within 10 seconds***
@@ -116,12 +114,11 @@
         2. **Display name:** Specify a user-friendly description that helps you easily identify the resource
         3. **Database name:** Specify the database name (it must consist of letters and numbers only)
         4. For the workload type, choose **JSON**
-        5. For the deployment type, choose **Shared infrastructure**
+        5. For the deployment type, choose **Serverless**
         6. Keep the database configuration the same
         7. Set the password for the Admin database user in your new database **Don't use @ in password**
         8. Choose network access **Secure access from allowed IPs and VCNs only** and select IP notation type **CIDR Block** with the Values **0.0.0.0/0**
-        9. Choose **License included** license type
-        10. Skip on the Provide contacts section and click **Create Autonomous Database**
+        9. Skip on the Provide contacts section and click **Create Autonomous Database**
 
     4. Wait until your new Autonomous Database's status changes from Provisioning to Available.
 
