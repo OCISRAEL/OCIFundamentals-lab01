@@ -15,7 +15,7 @@
 
 3. Use the following command to set the file permissions so that only you can read the file:
     <br><br>
-    ``chmod 400 <private_key_file>``
+    *``chmod 400 <private_key_file>``*
     <br><br>
     ``<private_key_file>`` is the full path and name of the file that contains the private key associated with the instance you want to access.
     
@@ -23,16 +23,19 @@
 
 4. Use the following SSH command to access the instance:
     <br><br>
-    ``ssh -i <private_key_file> <username>@<public-ip-address>``
+    *``ssh -i <private_key_file> <username>@<public-ip-address>``*
     <br><br>
-    ``<private_key_file>`` is the full path and name of the file that contains the private key associated with the instance you want to access.
+    `<private_key_file>` is the full path and name of the file that contains the private key associated with the instance you want to access.
+    <br>
+    `<username>` is the default username for the instance. For Oracle Linux and Redhat Enterprise Linux compatible images, the default username is `opc`. For Ubuntu images, the default username is `ubuntu`.
+    <br>
+    `<public-ip-address>` is the instance's IP address that you retrieved from the Console.
     <br><br>
-    ``<username>`` is the default username for the instance. For Oracle Linux and Redhat Enterprise Linux compatible images, the default username is ```opc```. For Ubuntu images, the default username is ```ubuntu```.
+6. If you're connecting to this instance for the first time, you need to accept the fingerprint of the key. To accept the fingerprint, type **yes** and press **Enter**.
     <br><br>
-    ``<public-ip-address>`` is the instance's IP address that you retrieved from the Console.
-5. If you're connecting to this instance for the first time, you need to accept the fingerprint of the key. To accept the fingerprint, type **yes** and press **Enter**.
-6. You are connected to the default shell for the instance.
-7. When you have finished your session, type exit at the shell prompt to end the session.
+7. You are connected to the default shell for the instance.
+    <br><br>
+8. When you have finished your session, type `exit` at the shell prompt to end the session.
 
 
 
