@@ -1,4 +1,4 @@
-# Connect to instance from a Linux machine
+# Connecting to a Linux Instance from a MacOS or Linux System
 
 ### In this approach, we will connect to a Linux instance using SSH and the public IP address that is provided by OCI to connect directly to the instance using the Linux (macOS) terminal.
 
