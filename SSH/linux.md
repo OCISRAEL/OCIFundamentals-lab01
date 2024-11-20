@@ -26,7 +26,9 @@
     ``ssh -i <private_key_file> <username>@<public-ip-address>``
     <br><br>
     ``<private_key_file>`` is the full path and name of the file that contains the private key associated with the instance you want to access.
-    ``<username>`` is the default username for the instance. For Oracle Linux and Redhat Enterprise Linux compatible images, the default username is ```opc```. For Ubuntu images, the default username is         ```ubuntu```.
+    <br><br>
+    ``<username>`` is the default username for the instance. For Oracle Linux and Redhat Enterprise Linux compatible images, the default username is ```opc```. For Ubuntu images, the default username is ```ubuntu```.
+    <br><br>
     ``<public-ip-address>`` is the instance's IP address that you retrieved from the Console.
 5. If you're connecting to this instance for the first time, you need to accept the fingerprint of the key. To accept the fingerprint, type **yes** and press **Enter**.
 6. You are connected to the default shell for the instance.
