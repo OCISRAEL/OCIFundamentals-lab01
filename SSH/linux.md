@@ -7,20 +7,16 @@
     
     ![drawing](../SS/ssh_cloud_shell/.png)
 
-2. Locate the private key file for your key pair. The default directory location for SSH keys is *<your-home-directory>/.ssh* . 
+2. Locate the private key file for your key pair. The default directory location for SSH keys is *`<your-home-directory>/.ssh`* . 
     <br><br>
     ``ds sd ``
-    
-    ![drawing](../SS/ssh_cloud_shell/.png)
 
 3. Use the following command to set the file permissions so that only you can read the file:
     <br><br>
     *``chmod 400 <private_key_file>``*
     <br><br>
     ``<private_key_file>`` is the full path and name of the file that contains the private key associated with the instance you want to access.
-    
-    ![drawing](../SS/ssh_cloud_shell/.png)
-
+    <br><br>
 4. Use the following SSH command to access the instance:
     <br><br>
     *``ssh -i <private_key_file> <username>@<public-ip-address>``*
