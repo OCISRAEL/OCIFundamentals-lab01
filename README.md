@@ -8,6 +8,7 @@
     1. OCI Account [(Click here to SignUp)](https://www.oracle.com/il-en/cloud/free/) / [(Click Here to Login)](https://www.oracle.com/cloud/sign-in.html)
     2. VCN [(Click here to create)](/VCN.md)
     3. Instance [(Click here to create)](/compute.md)
+    4. Block Volume [(Click here to create)](/block_volume.md)
 
 
 1. **STEP 1 : Create Dynamic Group and Policies**
