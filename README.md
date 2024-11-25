@@ -26,15 +26,23 @@
 
       ![drawing](./SS/step0/nav_bar_compartments.png)
 
-   4. Click the OCID string to view the entire value in a pop-up. Click Copy to copy the OCID to your clipboard. Save it - you'll need it.
+   4. Click the OCID string to view the entire value in a pop-up. Click Copy to copy the OCID to your clipboard. Save it - you'll need it later
 
       ![drawing](./SS/step0/compartment_ocid.png)
 
-   5. Click **Dynamic Groups** under **Identity** on the left, and then click **Create Dynamic Group** 
+   5. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Domains**
+
+        ![drawing](./SS/step0/nav_bar_domains.png)
+
+   6. Select the **Default** identity domain
+
+        ![drawing](./SS/step0/select_default_domain.png)
+
+   7. Click **Dynamic groups** under **Identity domain** on the left, and then click **Create dynamic group**
 
         ![drawing](./SS/step0/create_dg_button.png)
 
-   6. Enter the following:
+   8. Enter the following:
 
         1. **Name:** A unique name for the dynamic group
         2. **Description (optional):** A friendly description
@@ -42,7 +50,7 @@
 
         ![drawing](./SS/step0/create_dg_screen.png)
 
-    7. Enter the following:
+    9. Enter the following:
 
         1. **Include instances that match:** Select **Any of the following**
         2. **Match instances with:** Select **Compartment OCID**
@@ -87,7 +95,7 @@
    (save the bucket's name, you'll need it later)
 
         ![drawing](./SS/step1/create_new_bucket.png)
-
+<!--
    4. Before we move ahead, we must change the bucket's visibility to Public so we'll be able to access it without by link without authorization.
 
         To do so, click the three dots on the right, and then on **Edit Visibility**
@@ -97,7 +105,7 @@
    5. Select **Public** and click **Save Changes**
 
         ![drawing](./SS/step1/change_bucket_visibility.png)
-
+-->
    
 3. **STEP 3 : Create ADB (Autonomous Database)**
 
