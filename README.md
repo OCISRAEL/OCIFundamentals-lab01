@@ -273,7 +273,7 @@
 
 8. **STEP 8 : Review The Application**
 
-   1. Once you've completed all the steps, your web application should look like this:
+   1. Once you have successfully completed all these steps, your web application should look like this:
 
         ![drawing](./SS/app_ss.png)
 
