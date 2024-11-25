@@ -27,7 +27,11 @@
 
     ![drawing](./SS/compute/7.png)
 
-8. Copy the public address
+8. Click on Create
 
     ![drawing](./SS/compute/8.png)
+
+9. Copy the public address
+
+    ![drawing](./SS/compute/9.png)
 
