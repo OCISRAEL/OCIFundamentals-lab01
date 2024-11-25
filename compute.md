@@ -7,7 +7,7 @@
 
     ![drawing](./SS/compute/2.png)
 
-3. Enter a name for the instance
+3. Enter a name for the instance and select the compartment to create the instance in
 
     ![drawing](./SS/compute/3.png)
 
@@ -15,11 +15,11 @@
 
     ![drawing](./SS/compute/4.png)
 
-5. Select the VCN you want and make sure to place on in the Public Subnet
+5. Under **Virtual Cloud Network**, select the VCN we created earlier today, and under **Subnet**, select its Public Subnet.
 
      ![drawing](./SS/compute/5.png)
 
-6. Save the private key and the public key
+6. Click **Save Private Key**, and then save the private key on your computer (Optionally, click **Save Public Key** and then save the public key as well)
 
     ![drawing](./SS/compute/6.png)
 
