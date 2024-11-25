@@ -25,7 +25,7 @@
 
 7. Click **Show advanced options**
 
-    ![drawing](./SS/compute/8.png)
+    ![drawing](./SS/compute/7.png)
 
 8. On the **Oracle Cloud Agent** tab, choose **Vulnerability Scanning**, **Block Volume Management** and **Bastion** plugins
 
@@ -33,9 +33,9 @@
 
 9. Click **Create**
 
-    ![drawing](./SS/compute/8.png)
-
-10. Copy the public address
-
     ![drawing](./SS/compute/9.png)
+
+10. Copy the **Public IP address** and save it for later use
+
+    ![drawing](./SS/compute/10.png)
 
