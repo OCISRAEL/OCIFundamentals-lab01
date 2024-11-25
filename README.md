@@ -271,4 +271,9 @@
         sudo kill -9 $(sudo lsof -t -i:5000)
 
 
+8. **STEP 8 : Review The Application**
+
+   1. Once you've completed all the steps, your web application should look like this:
+
+        ![drawing](./SS/app_ss.png)
 
