@@ -40,7 +40,7 @@
 
    7. Click **Dynamic groups** under **Identity domain** on the left, and then click **Create dynamic group**
 
-        ![drawing](./SS/step0/create_dg_button.png)
+        ![drawing](./SS/step0/create_dg_button2.png)
 
    8. Enter the following:
 
