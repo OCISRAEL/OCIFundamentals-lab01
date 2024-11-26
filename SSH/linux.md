@@ -1,6 +1,5 @@
 # Connecting to a Linux Instance from a MacOS or Linux System
-
-### In this approach, we will connect to a Linux instance using SSH and the public IP address that is provided by OCI to connect directly to the instance using the Linux (macOS) terminal.
+### Use the OCI generated key pair or the key pair used to create the instance. Then use the following steps to connect to an OCI Linux instance.
 
 
 1. Open a terminal.
