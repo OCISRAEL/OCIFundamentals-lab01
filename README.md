@@ -195,18 +195,18 @@
 
 
 5. **STEP 5 : Git Clone**
-
+<!--
    0. Make sure your ssh key is secured
 
             chmod 700  <your_ssh_key_path>.key
-
-   1. Connect to the compute instance you've created earlier today by running the following command on your shell:
+-->
+   1. Connect to the compute instance you've created earlier today by running the following command on your terminal:
         - [Using Cloud Shell](./SSH/cloud_shell.md)
         - [Using Windows](./SSH/windows.md)
         - [Using Linux](./SSH/linux.md)
-    
+    <!--
             sudo ssh  -i <your_ssh_key_path>.key opc@<instance_ip>
-
+-->
     
    2. Switch to root user by running the following command:    
 
