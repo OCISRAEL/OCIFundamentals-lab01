@@ -1,5 +1,6 @@
 # Create a Block Volume and attach it to an Instance
-## Block volumes are detachable block storage devices that you can use to dynamically expand the storage capacity of an instance
+### Block volumes are detachable block storage devices that you can use to dynamically expand the storage capacity of an instance.
+<br>
 
 ### Create Block Volume
 
