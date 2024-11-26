@@ -10,14 +10,20 @@
 
 3. Use the following command to set the file permissions so that only you can read the file:
     <br>
-    *``chmod 400 <private_key_file>``*
+    ```
+    chmod 400 <private_key_file>
+    ```
     <br>
+
     > ``<private_key_file>`` is the full path and name of the file that contains the private key associated with the instance you want to access.
     <br>
 4. Use the following SSH command to access the instance:
-    <br><br>
-    *``ssh -i <private_key_file> <username>@<public-ip-address>``*
     <br>
+    ```
+    ssh -i <private_key_file> <username>@<public-ip-address>
+    ```
+    <br>
+
     >`<private_key_file>` is the full path and name of the file that contains the private key associated with the instance you want to access.    <br>
     `<username>` is the default username for the instance. For Oracle Linux and Redhat Enterprise Linux compatible images, the default username is `opc`. For Ubuntu images, the default username is `ubuntu`. <br>
     `<public-ip-address>` is the instance's IP address that you retrieved from the Console.
