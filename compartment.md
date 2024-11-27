@@ -1,6 +1,6 @@
 # Create Compartment
 ### Create compartments in an IAM tenancy to organize and isolate your cloud resources.
-<br>
+
 1. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Compartments**
 
 2. To create the compartment in the tenancy (root compartment) click **Create Compartment**
