@@ -12,9 +12,9 @@
 
     ![drawing](./SS/block_volume/2.png)
 
-3. In the **Create block volume**, provide the following values:
-    (1) Enter the **Name:** *bv-demo*
-    (2) **Create in compartment:** *demo*
+3. In the **Create block volume**, provide the following values: <br>
+    (1) Enter the **Name:** *bv-demo* <br>
+    (2) **Create in compartment:** *demo* <br>
     (3) Under **Volume size and performance** select **Custom** and enter **Volume size** of *50GB*.
 
     ![drawing](./SS/block_volume/3.png)
@@ -38,9 +38,9 @@
 
     ![drawing](./SS/block_volume/7.png)
 
-4. Provide the following values:
-    (1) Under **Volume** select **Select volume** and then select the volume from the Volume list
-    (2) Under **Attachment type** select **Custom**, **ISCSI** and **Use Oracle Cloud Agent to automatically connect to iSCSI-attached volumes**
+4. Provide the following values: <br>
+    (1) Under **Volume** select **Select volume** and then select the volume from the Volume list <br>
+    (2) Under **Attachment type** select **Custom**, **ISCSI** and **Use Oracle Cloud Agent to automatically connect to iSCSI-attached volumes** <br>
 
     ![drawing](./SS/block_volume/8.png)
 
