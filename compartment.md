@@ -9,7 +9,7 @@
     1. **Name:** demo
     2. **Description:** demo compartment
     3. **Parent Compartment:** Keep the default value which is the root compartment
-    4. **Tags:**: Skip this option
+    4. **Tags:** Skip this option
 
 4. Click **Create Compartment**
 
