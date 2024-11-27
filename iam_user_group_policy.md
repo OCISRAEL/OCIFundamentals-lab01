@@ -42,7 +42,7 @@
     1. **Name:** LabPolicy
     2. **Description:** Lab Policy
     3. **Compartment:** Select the root compartment
-    4. **Policy Builder:** Switch to manual editor and enter the following policy statement:
+    4. **Policy Builder:** Switch to manual editor and enter the following policy statement:<br>
     ```Allow group LabGroup to manage all-resources in compartment demo```
 
 4. Click **Create**
