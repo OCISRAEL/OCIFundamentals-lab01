@@ -6,8 +6,8 @@
 2. To create the compartment in the tenancy (root compartment) click **Create Compartment**
 
 3. Enter the following information:
-    1. **Name:** A unique name for the compartment
-    2. **Description:** A friendly description
+    1. **Name:** demo
+    2. **Description:** demo compartment
     3. **Parent Compartment:** Keep the default value which is the root compartment
     4. **Tags:**: Skip this option
 
