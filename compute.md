@@ -35,6 +35,11 @@
 
     ![drawing](./SS/compute/9.png)
 
+10. You can connect to the instance by running the following command on your terminal:
+        - [Using Cloud Shell](./SSH/cloud_shell.md)
+        - [Using Windows](./SSH/windows.md)
+        - [Using Linux](./SSH/linux.md)
+
 10. Copy the **Public IP address** and save it for later use
 
     ![drawing](./SS/compute/10.png)
