@@ -27,7 +27,7 @@
 
     ![drawing](./SS/compute/7.png)
 
-8. On the **Oracle Cloud Agent** tab, choose **Vulnerability Scanning111111111**, **Block Volume Management** and **Bastion** plugins
+8. On the **Oracle Cloud Agent** tab, choose **Vulnerability Scanning**, **Block Volume Management** and **Bastion** plugins
 
     ![drawing](./SS/compute/8.png)
 
