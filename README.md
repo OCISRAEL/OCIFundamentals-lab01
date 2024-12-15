@@ -1,9 +1,9 @@
 # OCI Fundamentals Workshop
 
 
-<ins>**Lab 1 – OCI Fundamentals** </ins>
+<ins>**Lab 1 – DEMO LECTURES** </ins>
 
-* **Prerequisites:**
+* **FOLLOW Those Steps First:**
 
     1. OCI Account [(Click here to SignUp)](https://www.oracle.com/il-en/cloud/free/) / [(Click Here to Login)](https://www.oracle.com/cloud/sign-in.html)
     2. Compartment [(Click here to create)](/compartment.md)
@@ -12,6 +12,8 @@
     5. Instance [(Click here to create)](/compute.md)
     6. Block Volume [(Click here to create)](/block_volume.md)
 
+
+<ins>**Lab 2 – CREATE YOUR APPLICATION** </ins>
 
 1. **STEP 1 : Create Dynamic Group and Policies**
 
