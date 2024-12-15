@@ -166,8 +166,7 @@
     8. Enter the following:
         
         1. **Collection Name:** Specify the collection name and save it - you'll need it later
-        2. **MongoDB Compatible:** Select this checkbox
-        3. Click **Create**
+        2. Click **Create**
 
         ![drawing](./SS/step2/new_collection_window.png)
 
