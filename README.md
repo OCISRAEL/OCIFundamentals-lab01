@@ -59,7 +59,7 @@
         3. **Value:** Enter your compartment OCID
         4. Click **Add Rule**, the rule should look similar to the following:
         
-             *Any {instance.compartment.id = '<your_ocid>'}*
+                 Any {instance.compartment.id = '<your_compartment_ocid>'}
 
         5. Click **Create**
 
@@ -77,7 +77,9 @@
             4. Switch the **Show manual editor** toggle on and add the following policies:
 
                     Allow dynamic-group <your_dg_name> to manage object-family in compartment <your_compartment_name>
-                    
+            
+            5. Click **Create**
+        
             * ***The new policies will go into effect typically within 10 seconds***
 
             ![drawing](./SS/step0/create_policy.png)
