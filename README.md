@@ -13,7 +13,7 @@
     6. Block Volume [(Click here to create)](/block_volume.md)
 
 
-<ins>**Lab 2 – CREATE YOUR APPLICATION** </ins>
+<ins>**Lab 2  – CREATE YOUR APPLICATION** </ins>
 
 1. **STEP 1 : Create Dynamic Group and Policies**
 
