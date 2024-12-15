@@ -155,7 +155,7 @@
 
         ![drawing](./SS/step2/db_actions_button.png)
 
-    11. Now, let's add a new collection to your database by clicking &nbsp; **{} JSON** &nbsp; under the Development section and then **Open**.
+    11. Now, let's add a new collection to your database by clicking &nbsp; **{ } JSON** &nbsp; under the Development section and then **Open**.
 
         ![drawing](./SS/step2/open_json_db.png)
 
