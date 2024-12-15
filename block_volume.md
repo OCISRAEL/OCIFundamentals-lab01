@@ -48,19 +48,24 @@
 
     ![drawing](./SS/block_volume/9.png)
 
-6. Verify that the disk has been successfully attached by executing the following command:
+6. Connect to the instance by running the following command on your terminal:<br>
+        - [Using Cloud Shell](./SSH/cloud_shell.md) <br>
+        - [Using Windows](./SSH/windows.md) <br>
+        - [Using Linux](./SSH/linux.md) <br>
+
+7. Verify that the disk has been successfully attached by executing the following command:
     ```
     sudo lsblk
     ```
 
-7. Format and mount the volume by executing the following commands:
+8. Format and mount the volume by executing the following commands:
     ```
     sudo mkfs.ext4 /dev/sdb
     sudo mkdir /mnt/data
     sudo mount /dev/sdb /mnt/data
     ```
 
-8. Run the following command to verify that the disk appears in the list:
+9. Run the following command to verify that the disk appears in the list:
     ```
     df-h
     ```
