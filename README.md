@@ -76,7 +76,7 @@
             3. **Compartment:** Select your compartment
             4. Switch the **Show manual editor** toggle on and add the following policies:
 
-                    Allow dynamic-group <your_dg_name> to manage object-family in tenancy
+                    Allow dynamic-group <your_dg_name> to manage object-family in compartment <your_compartment_name>
                     
             * ***The new policies will go into effect typically within 10 seconds***
 
