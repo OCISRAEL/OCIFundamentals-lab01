@@ -61,7 +61,7 @@
         3. **Value:** Enter your compartment OCID
         4. Click **Add Rule**, the rule should look similar to the following:
         
-             *Any {instance.compartment.id = '<your_ocid>'}*
+                 Any {instance.compartment.id = '<your_compartment_ocid>'}
 
         5. Click **Create**
 
@@ -78,8 +78,10 @@
             3. **Compartment:** Select your compartment
             4. Switch the **Show manual editor** toggle on and add the following policies:
 
-                    Allow dynamic-group <your_dg_name> to manage object-family in tenancy
-                    
+                    Allow dynamic-group <your_dg_name> to manage object-family in compartment <your_compartment_name>
+            
+            5. Click **Create**
+        
             * ***The new policies will go into effect typically within 10 seconds***
 
             ![drawing](./SS/step0/create_policy.png)
@@ -155,7 +157,7 @@
 
         ![drawing](./SS/step2/db_actions_button.png)
 
-    11. Now, let's add a new collection to your database by clicking &nbsp; **{} JSON** &nbsp; under the Development section and then **Open**.
+    11. Now, let's add a new collection to your database by clicking &nbsp; **{ } JSON** &nbsp; under the Development section and then **Open**.
 
         ![drawing](./SS/step2/open_json_db.png)
 
@@ -166,8 +168,7 @@
     8. Enter the following:
         
         1. **Collection Name:** Specify the collection name and save it - you'll need it later
-        2. **MongoDB Compatible:** Select this checkbox
-        3. Click **Create**
+        2. Click **Create**
 
         ![drawing](./SS/step2/new_collection_window.png)
 
