@@ -24,7 +24,7 @@
     ![drawing](./SS/block_volume/4.png)
 
 
-### Attaching the Block Volume to an Instance
+### Attaching the Block Volume to an Instance1
 
 1. Open the navigation menu and click **Compute**. Under **Compute**, click **Instances**
 
