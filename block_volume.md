@@ -32,38 +32,34 @@
 
     ![drawing](./SS/block_volume/6.png)
 
-3. In the **Resources**, click **Attached block volumes** and then click **Attach block volume**
+3. Provide the following values: <br>
+    (1) Under **Attachment type** select **ISCSI** 
+    (2) Under **Access Type** select **Read/Write**
+    (3) Choose your instance from the drop down list<br>
+    (4) Check the box **Use Oracle Cloud Agent to automatically connect to iSCSI-attached volumes** <br>
 
     ![drawing](./SS/block_volume/7.png)
 
-4. Provide the following values: <br>
-    (1) Under **Volume** select **Select volume** and then select the volume from the Volume list <br>
-    (2) Under **Attachment type** select **Custom**, **ISCSI** and **Use Oracle Cloud Agent to automatically connect to iSCSI-attached volumes** <br>
+4. Click **Attach**
 
-    ![drawing](./SS/block_volume/8.png)
-
-5. Keep the **Access** at its default value, and click **Attach**
-
-    ![drawing](./SS/block_volume/9.png)
-
-6. Connect to the instance by running the following command on your terminal:<br>
+5. Connect to the instance by running the following command on your terminal:<br>
         - [Using Cloud Shell](./SSH/cloud_shell.md) <br>
         - [Using Windows](./SSH/windows.md) <br>
         - [Using Linux](./SSH/linux.md) <br>
 
-7. Verify that the disk has been successfully attached by executing the following command:
+6. Verify that the disk has been successfully attached by executing the following command:
     ```
     sudo lsblk
     ```
 
-8. Format and mount the volume by executing the following commands:
+7. Format and mount the volume by executing the following commands:
     ```
     sudo mkfs.ext4 /dev/sdb
     sudo mkdir /mnt/data
     sudo mount /dev/sdb /mnt/data
     ```
 
-9. Run the following command to verify that the disk appears in the list:
+8. Run the following command to verify that the disk appears in the list:
     ```
     df-h
     ```
