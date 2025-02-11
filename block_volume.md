@@ -24,13 +24,11 @@
     ![drawing](./SS/block_volume/4.png)
 
 
-### Attaching the Block Volume to an Instance1
+### Attaching the Block Volume to an Instance
 
-1. Open the navigation menu and click **Compute**. Under **Compute**, click **Instances**
+1. Open the new **Block Volume** we just created
 
-    ![drawing](./SS/block_volume/5.png)
-
-2. In the **Instances** list, click the name of the instance that you want to attach a volume to
+2. In the left panel click on **Attached Instances**, and click on **Attach to Instance** button
 
     ![drawing](./SS/block_volume/6.png)
 
