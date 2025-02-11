@@ -33,8 +33,8 @@
     ![drawing](./SS/block_volume/6.png)
 
 3. Provide the following values: <br>
-    (1) Under **Attachment type** select **ISCSI** 
-    (2) Under **Access Type** select **Read/Write**
+    (1) Under **Attachment type** select **ISCSI** <br>
+    (2) Under **Access Type** select **Read/Write** <br>
     (3) Choose your instance from the drop down list<br>
     (4) Check the box **Use Oracle Cloud Agent to automatically connect to iSCSI-attached volumes** <br>
 
