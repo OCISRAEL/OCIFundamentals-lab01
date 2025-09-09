@@ -1,7 +1,7 @@
 # OCI Fundamentals Workshop
 
 
-<ins>**Lab 1 – DEMO LECTURES** </ins>
+<ins>**Lab 11 – DEMO LECTURES** </ins>
 
 * **FOLLOW Those Steps First:**
 
