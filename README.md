@@ -6,7 +6,7 @@
 * **FOLLOW Those Steps First:**
 
     1. OCI Account [(Click here to SignUp)](https://www.oracle.com/il-en/cloud/free/) / [(Click Here to Login)](https://www.oracle.com/cloud/sign-in.html)
-    2. Compartment [(Click here to create)](/compartment.md)
+    2. Compartment [(Click here to create)](/Demo Lectures/compartment.md)
     3. IAM User, Group and Policy [(Click here to create)](/iam_user_group_policy.md)
     4. VCN [(Click here to create)](/VCN.md)
     5. Instance [(Click here to create)](/compute.md)
