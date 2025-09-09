@@ -4,7 +4,7 @@
 
 2. Click on **Start VCN Wizard**
 
-    ![drawing](./SS/vcn/2.png)
+    ![drawing](../SS/vcn/2.png)
 
 3. Click on **Start VCN Wizard**
 
