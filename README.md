@@ -3,7 +3,7 @@
 
 <ins>**Lab 1 – DEMO LECTURES** </ins>
 
-* **FOLLOW Those Steps First:**
+* **FOLLOW Those Stepsss First:**
 
     1. OCI Account [(Click here to SignUp)](https://www.oracle.com/il-en/cloud/free/) / [(Click Here to Login)](https://www.oracle.com/cloud/sign-in.html)
     2. Compartment [(Click here to create)](Demo%20Lectures/compartment.md)
