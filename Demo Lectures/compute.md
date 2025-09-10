@@ -1,43 +1,43 @@
 # Create Compute Intance
 1. Open the navigation menu and click **Compute** &rarr; **Instances**
 
+2. Select the **'demo'** compartment, then click **Create Instance**
+
     ![drawing](../SS/compute/1.png)
 
-2. Click **Create Instance**
+3. Enter a name for the instance
 
     ![drawing](../SS/compute/2.png)
 
-3. Enter a name for the instance and select the compartment to create the instance in
+4. Under **Image and Shape** section, keep the default **Oracle Linux** image and the **VM.Standard.E4.Flex** shape
 
     ![drawing](../SS/compute/3.png)
 
-4. In the **Image and Shape** section, keep the default **Oracle Linux** image and the **VM.Standard.E4.Flex** shape
+5. Under **Shape** Click on **Change Shape**. 
 
-    ![drawing](../SS/compute/4.png)
+6. Choose  **AMD** -> **VM.Standard.E4.Flex** with **1 OCPU** and **8 GB of Memory**
 
-5. Under **Virtual Cloud Network**, select the VCN we created earlier today, and under **Subnet**, select its Public Subnet.
+![drawing](../SS/compute/4.png)
 
-     ![drawing](../SS/compute/5.png)
+7. Click on **Advanced options** and scroll down until you reach **Oracle Cloud Agent**. Add the following to your stack:
 
-6. Click **Save Private Key**, and then save the private key on your computer (Optionally, click **Save Public Key** and then save the public key as well)
+![drawing](../SS/compute/5.png)
 
-    ![drawing](../SS/compute/6.png)
+7. Click **Next** to reach **Networking**
 
-7. Click **Show advanced options**
+8. For **Primary Network** Select the VCN we created earlier today, and under **Subnet**, select its Public Subnet.
+
+     ![drawing](../SS/compute/6.png)
+
+9. Scroll down and  Click **Download Private Key** to save the private key on your computer (Optionally, click **Download Public Key** to reptetive use in the future)
 
     ![drawing](../SS/compute/7.png)
 
-8. On the **Oracle Cloud Agent** tab, choose **Vulnerability Scanning**, **Block Volume Management** and **Bastion** plugins
+9. Click **Next** to reach **Create**. Review and click
+
+10. Once done. Find and copy the **Public IPv4 address** and save it for later use
 
     ![drawing](../SS/compute/8.png)
-
-9. Click **Create**
-
-    ![drawing](../SS/compute/9.png)
-
-10. Copy the **Public IP address** and save it for later use
-
-    ![drawing](../SS/compute/10.png)
 
 11. You can connect to the instance by running the following command on your terminal:<br>
         - [Using Cloud Shell](../SSH/cloud_shell.md) <br>

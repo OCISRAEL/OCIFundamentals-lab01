@@ -9,7 +9,7 @@
 
     ![drawing](../SS/vcn/2.png)
 
-4. Fill the name of the VCN and leave everything else as default
+4. Fill the name of the VCN and leave everything else as **Default**
 
     ![drawing](../SS/vcn/3.png)
 
