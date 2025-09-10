@@ -29,17 +29,17 @@
 
     ![drawing](./SS/lab2/2.png)
 
-4. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Domains**
+5. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Domains**
 
-5. Select **root** compartment, then select the **Default** domain
+6. Select **root** compartment, then select the **Default** domain
 
    ![drawing](./SS/lab2/3.png)
 
-6. Move to **Dynamic groups** tab, then click **Create dynamic group**
+7. Move to **Dynamic groups** tab, then click **Create dynamic group**
 
    ![drawing](./SS/lab2/4.png)
 
-7. Enter the following:
+8. Enter the following:
 
    1. **Name:** DG-demo  
    2. **Description (optional):** Dynamic Group for demo compartment  
@@ -60,13 +60,13 @@
 
     5. Click **Create**
 
-8. Next, we need to give the dynamic group IAM permissions. 
+9. Next, we need to give the dynamic group IAM permissions. 
         
-9. Select **Policies** on the left menu, then click **Create Policy**
+10. Select **Policies** on the left menu, then click **Create Policy**
 
     ![drawing](./SS/lab2/6.png)
 
-10. Enter the following:
+11. Enter the following:
 
     1. **Name:** dg-policy-demo
     2. **Description (optional):** Dynamic Group IAM policy
@@ -80,7 +80,6 @@
     ```⚠️Note: The new policies will go into effect typically within 10 seconds ⚠️```
 
     ![drawing](./SS/lab2/7.png)
-
 
 **STEP 2 : Create Bucket**
 
@@ -269,9 +268,14 @@ you should get **sucess** on both times
         sudo kill -9 $(sudo lsof -t -i:5000)
 
 
-8. **STEP 8 : Review The Application**
+**STEP 8 : Review The Application**
 
-   1. Once you have successfully completed all these steps, your web application should look like this:
+1. Once you have successfully completed all these steps, your web application should look like this:
 
-        ![drawing](./SS/app_ss.png)
+   ![drawing](./SS/app_ss.png)
 
+2. Upload a test file to the app and confirm it was successful.
+
+3. Check your **bucket**. Do you see the uploaded file?
+
+4. Check your **Autonomous Database** JSON collection. Do you see a new entry?
