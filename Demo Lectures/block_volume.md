@@ -50,7 +50,7 @@
     ```
     sudo lsblk
     ```
-    Note: the device name /dev/sdb may differ depending on your setup. Use the output of lsblk to confirm
+    :::⚠️Note: the device name /dev/sdb may differ depending on your setup. Use the output of lsblk to confirm⚠️:::
     ![drawing](../SS/block_volume/6.png)
 
 8. Format and mount the volume by executing the following commands:
