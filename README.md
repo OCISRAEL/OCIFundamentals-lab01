@@ -88,7 +88,7 @@
 
     ![drawing](./SS/lab2/8.png)
 
-3. Enter a name for your bucket,then click **Create**
+3. Enter a name for your bucket,then click **Create** <br>
 ```⚠️Note: Save the bucket's name, you'll need it later⚠️```
     ![drawing](./SS/lab2/9.png)
    
