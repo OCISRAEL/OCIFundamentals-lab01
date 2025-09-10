@@ -5,16 +5,18 @@
 
 1. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Domains**
 
-2. Click the **Default** identity domain, and then click **Users** and **Create user**
+2. Click the **Default** identity domain,then click **User management** and finnaly click **Create**
 
 3. Enter the following:
-    1. **Name:** User
+    1. **First Name:** User
     2. **Last Name:** Lab
     3. Clear the **Use the email address as the username** checkbox
     4. **Username:** userlab
     5. **Email:**: Enter a valid email address for notifications (your private email)
 
 4. Click **Create**
+
+<img src="../SS/iam/1.png" alt="drawing" width="600">
 
 
 ### Creating a Group
@@ -46,4 +48,6 @@
     ```Allow group LabGroup to manage all-resources in compartment demo```
 
 4. Click **Create**
+
+<img src="../SS/iam/2.png" alt="drawing" width="600">
 
