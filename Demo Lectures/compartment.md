@@ -3,6 +3,8 @@
 
 1. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Compartments**
 
+![drawing](../SS/compartment/1.png)
+
 2. To create the compartment in the tenancy (root compartment) click **Create Compartment**
 
 3. Enter the following information:
