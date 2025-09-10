@@ -48,14 +48,12 @@
             4. Click **Add Rule**, 
 
             ![drawing](./SS/lab2/5.png)
-        
-        
+                
         4. The rule should look similar to the following:
         
                 Any {instance.compartment.id = '<your_compartment_ocid>'}
 
         5. Click **Create**
-
 
     8. Next, we need to give the dynamic group IAM permissions. 
     
