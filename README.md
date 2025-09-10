@@ -130,7 +130,7 @@
 
     It should looks like: *mongodb://**ADMIN**:**password**@G0D09E...F.adb.il-jerusalem-1.oraclecloudapps.com:27017/**ADMIN**?authMechanism...true*
 
-    ``⚠️Note: Your string name may differ depending on your setup⚠️```
+    ```⚠️Note: Your string name may differ depending on your setup⚠️```
 
     ![drawing](./SS/lab2/12.png)
 
