@@ -41,7 +41,7 @@
 
 8. Enter the following:
 
-   1. **Name:** DG-demo  
+   1. **Name:** dg-demo  
    2. **Description (optional):** Dynamic Group for demo compartment  
    3. Under **Matching rules** click **Rule Builder** and follow:  
 
