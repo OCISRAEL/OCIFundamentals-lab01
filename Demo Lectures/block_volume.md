@@ -17,9 +17,8 @@
 
     ![drawing](../SS/block_volume/2.png)
 
-4. Keep all values **Default**, and click **Create Block Volume**.
+4. Keep all values **Default**, and click **Create Block Volume**. <br>
 
-<br>
 ### Attaching the Block Volume to an Instance
 
 1. Open the new **Block Volume** we just created
