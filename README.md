@@ -82,88 +82,74 @@
 
 **STEP 2 : Create Bucket**
 
-   1. Click **Storage** &rarr; **Object Storage & Archive Storage** &rarr; **Buckets**
+1. Click **Storage** &rarr; **Object Storage & Archive Storage** &rarr; **Buckets**
 
-        ![drawing](./SS/step1/nav_bar_buckets.png)
+2. Select **demo** compartment, then click **Create Bucket**
 
-   2. Click **Create Bucket** (make sure you're in the right compartment)
+    ![drawing](./SS/lab2/8.png)
 
-        ![drawing](./SS/step1/create_bucket_button.png)
-
-   3. Enter a name for your bucket and click **Create**
-   (save the bucket's name, you'll need it later)
-
-        ![drawing](./SS/step1/create_new_bucket.png)
-<!--
-   4. Before we move ahead, we must change the bucket's visibility to Public so we'll be able to access it without by link without authorization.
-
-        To do so, click the three dots on the right, and then on **Edit Visibility**
-
-        ![drawing](./SS/step1/edit_bucket_visibility_button.png)
-
-   5. Select **Public** and click **Save Changes**
-
-        ![drawing](./SS/step1/change_bucket_visibility.png)
--->
+3. Enter a name for your bucket,then click **Create**
+```⚠️Note: Save the bucket's name, you'll need it later⚠️```
+    ![drawing](./SS/lab2/9.png)
    
-3. **STEP 3 : Create ADB (Autonomous Database)**
+  **STEP 3 : Create ADB (Autonomous Database)**
 
-   1. Open the navigation menu and click **Oracle Database** &rarr; **Autonomous JSON Database** 
+1. Open the navigation menu and click **Oracle Database** &rarr; **Autonomous JSON Database** 
 
-        ![drawing](./SS/step2/nav_bar_adb.png)
+    ![drawing](./SS/step2/nav_bar_adb.png)
 
-   2. Click **Create Autonomous Database** (make sure you're in the right compartment)
+2. Click **Create Autonomous Database** (make sure you're in the right compartment)
 
-        ![drawing](./SS/step2/create_adb_button.png)
+    ![drawing](./SS/step2/create_adb_button.png)
 
-   3. Enter the following:
-        
-        1. **Compartment:** Select your compartment
-        2. **Display name:** Specify a user-friendly description that helps you easily identify the resource
-        3. **Database name:** Specify the database name (it must consist of letters and numbers only)
-        4. For the workload type, choose **JSON**
-        5. For the deployment type, choose **Serverless**
-        6. Keep the database configuration the same
-        7. Set the password for the Admin database user in your new database **Don't use @ in password**
-        8. Choose network access **Secure access from allowed IPs and VCNs only** and select IP notation type **CIDR Block** with the Values **0.0.0.0/0**
-        9. Skip on the Provide contacts section and click **Create Autonomous Database**
+3. Enter the following:
+    
+    1. **Compartment:** Select your compartment
+    2. **Display name:** Specify a user-friendly description that helps you easily identify the resource
+    3. **Database name:** Specify the database name (it must consist of letters and numbers only)
+    4. For the workload type, choose **JSON**
+    5. For the deployment type, choose **Serverless**
+    6. Keep the database configuration the same
+    7. Set the password for the Admin database user in your new database **Don't use @ in password**
+    8. Choose network access **Secure access from allowed IPs and VCNs only** and select IP notation type **CIDR Block** with the Values **0.0.0.0/0**
+    9. Skip on the Provide contacts section and click **Create Autonomous Database**
 
-    4. Wait until your new Autonomous Database's status changes from Provisioning to Available.
+4. Wait until your new Autonomous Database's status changes from Provisioning to Available.
 
-    5.  Select the **Tool configuration** tab on the Autonomous Database details page.
+5.  Select the **Tool configuration** tab on the Autonomous Database details page.
 
-        ![drawing](./SS/step2/tool_configuration.png)
+    ![drawing](./SS/step2/tool_configuration.png)
 
-    6. Scroll down the Tool configuration page until you find the **MongoDB API**.
+6. Scroll down the Tool configuration page until you find the **MongoDB API**.
 
-        ![drawing](./SS/step2/mongodb_api_connection_string.png)
+    ![drawing](./SS/step2/mongodb_api_connection_string.png)
 
-    8. Copy the connection string under **Public access URL** and save it - you'll need it later.
+8. Copy the connection string under **Public access URL** and save it - you'll need it later.
 
-       Instead of *[user:password@]* enter your database username and password (without the '[]' with the @)
+    Instead of *[user:password@]* enter your database username and password (without the '[]' with the @)
 
-       Instead of *[user]* enter your database user
+    Instead of *[user]* enter your database user
 
-       It should looks like: *mongodb://**user**:**password**@G0D09E...F.adb.il-jerusalem-1.oraclecloudapps.com:27017/**user**?authMechanism...true*
+    It should looks like: *mongodb://**user**:**password**@G0D09E...F.adb.il-jerusalem-1.oraclecloudapps.com:27017/**user**?authMechanism...true*
 
-    10. Click **Database actions** and then **View all database actions**.
+10. Click **Database actions** and then **View all database actions**.
 
-        ![drawing](./SS/step2/db_actions_button.png)
+    ![drawing](./SS/step2/db_actions_button.png)
 
-    11. Now, let's add a new collection to your database by clicking &nbsp; **{ } JSON** &nbsp; under the Development section and then **Open**.
+11. Now, let's add a new collection to your database by clicking &nbsp; **{ } JSON** &nbsp; under the Development section and then **Open**.
 
-        ![drawing](./SS/step2/open_json_db.png)
+    ![drawing](./SS/step2/open_json_db.png)
 
-    8. Click **Create Collection**
+8. Click **Create Collection**
 
-        ![drawing](./SS/step2/create_new_collection.png)
+    ![drawing](./SS/step2/create_new_collection.png)
 
-    8. Enter the following:
-        
-        1. **Collection Name:** Specify the collection name and save it - you'll need it later
-        2. Click **Create**
+8. Enter the following:
+    
+    1. **Collection Name:** Specify the collection name and save it - you'll need it later
+    2. Click **Create**
 
-        ![drawing](./SS/step2/new_collection_window.png)
+    ![drawing](./SS/step2/new_collection_window.png)
 
 
 4. **STEP 4 : Open Port 5000 in VCN**
