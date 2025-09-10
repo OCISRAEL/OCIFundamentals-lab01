@@ -113,15 +113,14 @@
     8. Set **IP notation type:** CIDR block & **Value:** 0.0.0.0/0 - ⚠️**For testing purpose only**⚠️
     9. Skip on the **Contacts** section and click **Create**
 
-4. Wait until your new Autonomous Database's status changes from Provisioning to Available.
+4. Wait until your new Autonomous Database's status changes from **Provisioning** to **Available**
 
-5.  Select the **Tool configuration** tab on the Autonomous Database details page.
+5.  Select the **Tool configuration** tab on the Autonomous Database details page
 
     ![drawing](./SS/lab2/11.png)
 
-6. Scroll down the Tool configuration page until you find the **MongoDB API**.
+6. Scroll down the Tool configuration page until you find the **MongoDB API**
 
-    ![drawing](./SS/lab2/12.png)
 
 8. Copy the connection string under **Public access URL** and edit it as follow: 
 
@@ -132,6 +131,8 @@
     It should looks like: *mongodb://**ADMIN**:**password**@G0D09E...F.adb.il-jerusalem-1.oraclecloudapps.com:27017/**ADMIN**?authMechanism...true*
 
     ``⚠️Note: Your string name may differ depending on your setup⚠️```
+
+    ![drawing](./SS/lab2/12.png)
 
 9. Save the full string - you'll need it later
 
