@@ -75,7 +75,7 @@
     
     5. Click **Create**
 
-    ```⚠️Note: The new policies will go into effect typically within 10 seconds*** ⚠️```
+    ```⚠️Note: The new policies will go into effect typically within 10 seconds ⚠️```
 
     ![drawing](./SS/lab2/7.png)
 
