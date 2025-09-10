@@ -121,10 +121,9 @@
 
 6. Scroll down the Tool configuration page until you find the **MongoDB API**
 
-
 8. Copy the connection string under **Public access URL** and edit it as follow: 
 
-    Instead of **[user:password@]** enter your database username and password (Without the '[]'. With the @)
+    Instead of **[user:password@]** enter your database username and password **(Without the '[]'. With the @)**
 
     Instead of **[user]** enter your database admin user
 
@@ -156,33 +155,39 @@
     ![drawing](./SS/lab2/16.png)
 
 
-4. **STEP 4 : Open Port 5000 in VCN**
+**STEP 4 : Open Port 5000 in VCN**
 
-   1. Go to the VCN you've created earlier by opening the navigation menu and clicking **Networking** &rarr; **Virtual Cloud Networks** and then on your VCN's name.
-      If you did't open one please follow the instractions here
+1. Open the navigation menu and click **Networking** &rarr; **Virtual Cloud Networks**
 
-   2. Under Resources, select **Subnets** and click **Public Subnet-<your_vcn_name>**
+2. Select the VCN we created earlier **VCN-demo**
 
-        ![drawing](./SS/step3/vcn_public_subnet.png)
+3. In the **Subnets** tab, click **Public Subnet-<your_vcn_name>**
+
+    ![drawing](./SS/lab2/17.png)
+
+4. In the **Security** tab, click Default **Security List for <your_vcn_name>**
+
+    ![drawing](./SS/lab2/18.png)
+
+5. Select **Security rules** tab
+
+6. Click **Add Ingress Rules** to save
+
+7. Enter the following:
     
-   3. Under Resources, select **Security Lists** and click **Default Security List for <your_vcn_name>**
+    1. **Source Type:** CIDR
+    2. **Source CIDR:** 0.0.0.0/0
+    3. **IP Protocol:** TCP
+    4. **Destination Port Range:** 5000
+    5. Click **Add Ingress Rules**
 
-        ![drawing](./SS/step3/public_security_list.png)
+    ![drawing](./SS/lab2/19.png)
 
-    4. Click on **Add Ingress Rules**
+8. The newly created rule will be added to the list
 
-    5. Enter the following:
-        
-        1. **Source Type:** Select CIDR
-        2. **Source CIDR:** Enter 0.0.0.0/0
-        3. **IP Protocol:** Select TCP
-        4. **Destination Port Range:** Enter 5000
-        5. Click **Save Changes**
+    ![drawing](./SS/lab2/20.png)
 
-        ![drawing](./SS/step3/open_port_5000.png)
-
-
-5. **STEP 5 : Git Clone**
+**STEP 5 : Git Clone**
 <!--
    0. Make sure your ssh key is secured
 
