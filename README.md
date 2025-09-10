@@ -97,11 +97,9 @@
 
 1. Open the navigation menu and click **Oracle Database** &rarr; **Autonomous Database** 
 
-    ![drawing](./SS/lab2/10.png)
-
 2. Click **Create Autonomous Database** (make sure you're in the right compartment)
 
-    !(./SS/lab2/10.png)
+    ![drawing](./SS/lab2/10.png)
 
 3. Enter the following:
     
@@ -119,11 +117,11 @@
 
 5.  Select the **Tool configuration** tab on the Autonomous Database details page.
 
-    !(./SS/lab2/11.png)
+    ![drawing](./SS/lab2/11.png)
 
 6. Scroll down the Tool configuration page until you find the **MongoDB API**.
 
-    !(./SS/lab2/12.png)
+    ![drawing](./SS/lab2/12.png)
 
 8. Copy the connection string under **Public access URL** and edit it as follow: 
 
@@ -139,22 +137,22 @@
 
 10. Scroll up & Click **Database actions** and then **View all database actions**.
 
-    !(./SS/lab2/13.png)
+    ![drawing](./SS/lab2/13.png)
 
 11. Now, let's add a new collection to your database by clicking &nbsp; **{ } JSON** &nbsp; under the Development section and then **Open**.
 
-    ![drawing](./SS/step2/open_json_db.png)
+    ![drawing](./SS/lab2/14.png)
 
 8. Click **Create Collection**
 
-    ![drawing](./SS/step2/create_new_collection.png)
+    ![drawing](./SS/lab2/15.png)
 
 8. Enter the following:
     
-    1. **Collection Name:** Specify the collection name and save it - you'll need it later
+    1. **Collection Name:** collection-demo - ⚠️Save it. You'll need it later⚠️
     2. Click **Create**
 
-    ![drawing](./SS/step2/new_collection_window.png)
+    ![drawing](./SS/lab2/16.png)
 
 
 4. **STEP 4 : Open Port 5000 in VCN**
