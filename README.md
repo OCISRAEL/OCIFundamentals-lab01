@@ -15,79 +15,70 @@
 
 <ins>**Lab 2 – CREATE YOUR APPLICATION** </ins>
 
-1. **STEP 1 : Create Dynamic Group and Policies**
+**STEP 1 : Create Dynamic Group and Policies**
 
    1. First, make sure you're using the right region - Israel Central (Jerusalem)
 
-      ![drawing](./SS/step1/region.png)
-      <!-- <img src="./SS/region.png" alt="drawing" width="2000" height="20"/> -->
+      ![drawing](./SS/lab2/1.png)
 
-   2. Open the OCI navigation menu on top left &nbsp; 
+   2. Open the navigation menu and click **Identity & Security** &rarr; **Identity** &rarr; **Compartments**
 
-        <img src="./SS/step1/nav_bar_logo.png" alt="drawing" width="20"  display="inline-block" />
+   4. Copy the full OCID string of 'demo' compatment. Save it - you'll need it later
 
-   3. Click **Identity & Security** &rarr; **Identity** &rarr; **Compartments**
-
-      ![drawing](./SS/step0/nav_bar_compartments.png)
-
-   4. Click the OCID string to view the entire value in a pop-up. Click Copy to copy the OCID to your clipboard. Save it - you'll need it later
-
-      ![drawing](./SS/step0/compartment_ocid.png)
+      ![drawing](./SS/lab2/2.png)
 
    5. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Domains**
 
-        ![drawing](./SS/step0/nav_bar_domains.png)
+   6. Select **root** compartment, then select the **Default** domain
 
-   6. Select the **Default** identity domain
+        ![drawing](./SS/lab2/3.png)
 
-        ![drawing](./SS/step0/select_default_domain.png)
+   7. Move to **Dynamic groups** tab, then click **Create dynamic group**
 
-   7. Click **Dynamic groups** under **Identity domain** on the left, and then click **Create dynamic group**
-
-        ![drawing](./SS/step0/create_dg_button2.png)
+        ![drawing](./SS/lab2/4.png)
 
    8. Enter the following:
 
-        1. **Name:** A unique name for the dynamic group
-        2. **Description (optional):** A friendly description
-        3. Click **Rule Builder**
+        1. **Name:** DG-demo
+        2. **Description (optional):** Dynamic Group for demo compartment
+        3. Under **Matching rules** click **Rule Builder** and follow:
+            1. **Include instances that match:** Any of the following
+            2. **Match instances with:** Commpartment OCID
+            3. **Value:** Enter your compartment OCID
+            4. Click **Add Rule**, 
 
-        ![drawing](./SS/step0/create_dg_screen.png)
-
-    9. Enter the following:
-
-        1. **Include instances that match:** Select **Any of the following**
-        2. **Match instances with:** Select **Compartment OCID**
-        3. **Value:** Enter your compartment OCID
-        4. Click **Add Rule**, the rule should look similar to the following:
+            ![drawing](./SS/lab2/5.png)
+        
+        
+        4. The rule should look similar to the following:
         
                  Any {instance.compartment.id = '<your_compartment_ocid>'}
 
         5. Click **Create**
 
-            ![drawing](./SS/step0/create_matching_rule.png)
+    6. Next, we need to give the dynamic group IAM permissions. 
+    
+    9. Select **Policies** on the left menu, then click **Create Policy**
 
-        6. Next, give the dynamic group permissions by writing one or more policies. To do so, first click **Policies** under **Identity** on the left, and then click **Create Policy**
+        ![drawing](./SS/lab2/6.png)
 
-            ![drawing](./SS/step0/create_policy_button.png)
+    7. Enter the following:
 
-        7. Enter the following:
+        1. **Name:** dg-policy-demo
+        2. **Description (optional):** Dynamic Group IAM policy
+        3. **Compartment:** root
+        4. Switch the **Show manual editor** and add the following policies:
 
-            1. **Name:** A unique name for the policy
-            2. **Description (optional):** A friendly description
-            3. **Compartment:** Select your compartment
-            4. Switch the **Show manual editor** toggle on and add the following policies:
-
-                    Allow dynamic-group <your_dg_name> to manage object-family in compartment <your_compartment_name>
-            
-            5. Click **Create**
+                Allow dynamic-group <your_dg_name> to manage object-family in compartment <your_compartment_name>
         
-            * ***The new policies will go into effect typically within 10 seconds***
+        5. Click **Create**
+    
+        ```⚠️Note: The new policies will go into effect typically within 10 seconds*** ⚠️```
 
-            ![drawing](./SS/step0/create_policy.png)
+        ![drawing](./SS/lab2/7.png)
 
 
-2. **STEP 2 : Create Bucket**
+**STEP 2 : Create Bucket**
 
    1. Click **Storage** &rarr; **Object Storage & Archive Storage** &rarr; **Buckets**
 
