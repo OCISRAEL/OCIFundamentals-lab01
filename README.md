@@ -187,58 +187,55 @@
 
     ![drawing](./SS/lab2/20.png)
 
-**STEP 5 : Git Clone**
-<!--
-   0. Make sure your ssh key is secured
+STEP 5 : Git Clone**
 
-            chmod 700  <your_ssh_key_path>.key
--->
-   1. Connect to the compute instance you've created earlier today by running the following command on your terminal:
-        - [Using Cloud Shell](./SSH/cloud_shell.md)
-        - [Using Windows](./SSH/windows.md)
-        - [Using Linux](./SSH/linux.md)
-    <!--
-            sudo ssh  -i <your_ssh_key_path>.key opc@<instance_ip>
--->
+Use one of below methods to connect to the compute instance you've created earlier today:
+    - [Using Cloud Shell](./SSH/cloud_shell.md)
+    - [Using Windows](./SSH/windows.md)
+    - [Using Linux](./SSH/linux.md)
+
+1. [LINUX/MACOS/Windows] Open your terminal and run:
+
+    ssh  -i <your_ssh_key_full_path>.key opc@<instance_ip>
+
+2. Switch to root user by running the following command:    
+
+        sudo su
+
+3. After you connected to your machine, install git by running the following command:    
+
+        yum install git
+
+4. Now, clone the git repository by running the following command:    
+
+        git clone https://github.com/OCISRAEL/OCIFundamentals-lab01
+
+
+STEP 6 : Edit The Config File**
+
+1. Change directory to the cloned folder "OCIFundamentals-lab-01" by running the following command:    
+
+        cd OCIFundamentals-lab-01
+
+2. Run the following command to edit the config file:
+
+        vi flask/config.txt
+
+3. The file will look like that:
+
+        {
+        "CONNECTION_STRING": "<DB_CONNECTION_STRING>",
+        "bucketName": "<BUCKET_NAME>",
+        "coll_name": "<COLLECTION_NAME>"
+        }
+
+4. Press on "**i**" key to edit the file and change the following:
     
-   2. Switch to root user by running the following command:    
+    1. **"CONNECTION_STRING":** Replace <DB_CONNECTION_STRING> with your db's connection string (inside the quotation marks)
+    2. **"bucketName":** Replace <BUCKET_NAME> with your bucket's name (inside the quotation marks)
+    3. **"coll_name":** Replace <COLLECTION_NAME> with your collection's name (inside the quotation marks)
 
-            sudo su
-
-   3. After you connected to your machine, install git by running the following command:    
-
-            yum install git
-
-   4. Now, clone the git repository by running the following command:    
-
-            git clone https://github.com/OCISRAEL/OCIFundamentals-lab01
-
-
-6. **STEP 6 : Edit The Config File**
-
-    1. Change directory to the cloned folder "OCIFundamentals-lab-01" by running the following command:    
-
-            cd OCIFundamentals-lab-01
-
-    2. Run the following command to edit the config file:
-
-            vi flask/config.txt
-
-    3. The file will look like that:
-
-            {
-            "CONNECTION_STRING": "<DB_CONNECTION_STRING>",
-            "bucketName": "<BUCKET_NAME>",
-            "coll_name": "<COLLECTION_NAME>"
-            }
-
-    4. Press on "**i**" key to edit the file and change the following:
-        
-        1. **"CONNECTION_STRING":** Replace <DB_CONNECTION_STRING> with your db's connection string (inside the quotation marks)
-        2. **"bucketName":** Replace <BUCKET_NAME> with your bucket's name (inside the quotation marks)
-        3. **"coll_name":** Replace <COLLECTION_NAME> with your collection's name (inside the quotation marks)
-
-    5. After you've finished editing, press the "**esc**" key, then **"shift" + ":"** , then write **:wq** and finally press the "**enter**" key to save your changes
+5. After you've finished editing, press the "**esc**" key, then **"shift" + ":"** , then write **:wq** and finally press the "**enter**" key to save your changes
 
 
 7. **STEP 7 : Running The Application**
