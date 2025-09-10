@@ -25,7 +25,7 @@
 
 3. Copy the full OCID string of 'demo' compartment. Save it - you'll need it later
 
-   ![drawing](../SS/lab2/2.png)
+   ![drawing](./SS/lab2/2.png)
 
 4. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Domains**
 
