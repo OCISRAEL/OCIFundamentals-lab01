@@ -187,7 +187,7 @@
 
     ![drawing](./SS/lab2/20.png)
 
-STEP 5 : Git Clone**
+**STEP 5 : Git Clone**
 
 Use one of below methods to connect to the compute instance you've created earlier today:
     - [Using Cloud Shell](./SSH/cloud_shell.md)
@@ -196,7 +196,7 @@ Use one of below methods to connect to the compute instance you've created earli
 
 1. [LINUX/MACOS/Windows] Open your terminal and run:
 
-    ssh  -i <your_ssh_key_full_path>.key opc@<instance_ip>
+        ssh  -i <your_ssh_key_full_path>.key opc@<instance_ip>
 
 2. Switch to root user by running the following command:    
 
@@ -211,7 +211,7 @@ Use one of below methods to connect to the compute instance you've created earli
         git clone https://github.com/OCISRAEL/OCIFundamentals-lab01
 
 
-STEP 6 : Edit The Config File**
+**STEP 6 : Edit The Config File**
 
 1. Change directory to the cloned folder "OCIFundamentals-lab-01" by running the following command:    
 
