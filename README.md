@@ -23,9 +23,11 @@
 
 2. Open the navigation menu and click **Identity & Security** → **Identity** → **Compartments**
 
-3. Copy the full OCID string of 'demo' compartment. Save it - you'll need it later
+3. Select **demo** compartment
 
-   ![drawing](./SS/lab2/2.png)
+4. Copy the full OCID string of **demo** compartment. ⚠️ Save it - you'll need it later ⚠️
+
+    ![drawing](./SS/lab2/2.png)
 
 4. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Domains**
 
@@ -133,7 +135,7 @@
 
     ![drawing](./SS/lab2/12.png)
 
-9. Save the full string - you'll need it later
+9. ⚠️ Save the full string - you'll need it later ⚠️
 
 10. Scroll up & Click **Database actions** and then **View all database actions**.
 
@@ -231,29 +233,35 @@ Use one of below methods to connect to the compute instance you've created earli
 
 4. Press on "**i**" key to edit the file and change the following:
     
-    1. **"CONNECTION_STRING":** Replace <DB_CONNECTION_STRING> with your db's connection string (inside the quotation marks)
+    1. **"CONNECTION_STRING":** Replace <DB_CONNECTION_STRING> with your **Mongo DB's** connection string (inside the quotation marks)
     2. **"bucketName":** Replace <BUCKET_NAME> with your bucket's name (inside the quotation marks)
     3. **"coll_name":** Replace <COLLECTION_NAME> with your collection's name (inside the quotation marks)
 
 5. After you've finished editing, press the "**esc**" key, then **"shift" + ":"** , then write **:wq** and finally press the "**enter**" key to save your changes
 
 
-7. **STEP 7 : Running The Application**
+**STEP 7 : Running The Application**
 
-    1. Run the following command to install all of the packages listed in the "requirements.txt" file:
+1. Install pip
 
-            pip3 install -r requirements.txt
+        sudo yum install -y python3-pip
 
-    2. Run the following commands to open port 5000 in the Linux firewall:
+2. Install all of the packages listed in the "requirements.txt" file:
 
-        1.      sudo firewall-cmd --permanent --zone=public --add-port=5000/tcp
-        2.      sudo firewall-cmd --reload
+        pip3 install -r requirements.txt
 
-    3. Run the following command to run the application:
+3. Run the following commands to open port 5000 in the Linux firewall:
 
-            python3 flask/OCIFundamentalWorkshop-Instance.py
+    1.      sudo firewall-cmd --permanent --zone=public --add-port=5000/tcp
+    2.      sudo firewall-cmd --reload
 
-    4. Navigate to the address **http://<your_instance_public_ip>:5000** in your browser and start uploading!
+you should get **sucess** on both times
+
+3. Run the following command to run the application:
+
+        python3 flask/OCIFundamentalWorkshop-Instance.py
+
+4. Navigate to the address **http://<your_instance_public_ip>:5000** in your browser and start uploading!
 
 
 * **If you get the errors "address already in use" or "the server couldnt be started, because another server runs on that port", simply run the following command:**
