@@ -23,21 +23,21 @@
 
    2. Open the navigation menu and click **Identity & Security** &rarr; **Identity** &rarr; **Compartments**
 
-   4. Copy the full OCID string of 'demo' compatment. Save it - you'll need it later
+   3. Copy the full OCID string of 'demo' compatment. Save it - you'll need it later
 
       ![drawing](./SS/lab2/2.png)
 
-   5. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Domains**
+   4. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Domains**
 
-   6. Select **root** compartment, then select the **Default** domain
+   5. Select **root** compartment, then select the **Default** domain
 
         ![drawing](./SS/lab2/3.png)
 
-   7. Move to **Dynamic groups** tab, then click **Create dynamic group**
+   6. Move to **Dynamic groups** tab, then click **Create dynamic group**
 
         ![drawing](./SS/lab2/4.png)
 
-   8. Enter the following:
+   7. Enter the following:
 
         1. **Name:** DG-demo
         2. **Description (optional):** Dynamic Group for demo compartment
@@ -56,13 +56,13 @@
 
         5. Click **Create**
 
-    6. Next, we need to give the dynamic group IAM permissions. 
+    8. Next, we need to give the dynamic group IAM permissions. 
     
     9. Select **Policies** on the left menu, then click **Create Policy**
 
         ![drawing](./SS/lab2/6.png)
 
-    7. Enter the following:
+    10. Enter the following:
 
         1. **Name:** dg-policy-demo
         2. **Description (optional):** Dynamic Group IAM policy
