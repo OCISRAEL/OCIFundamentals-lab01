@@ -52,9 +52,10 @@
         
         4. The rule should look similar to the following:
         
-            Any {instance.compartment.id = '<your_compartment_ocid>'}
+                Any {instance.compartment.id = '<your_compartment_ocid>'}
 
         5. Click **Create**
+
 
     8. Next, we need to give the dynamic group IAM permissions. 
     
