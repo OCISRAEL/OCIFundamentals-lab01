@@ -88,54 +88,58 @@
 
     ![drawing](./SS/lab2/8.png)
 
-3. Enter a name for your bucket,then click **Create** <br>
+3. Enter a name for your bucket,then click **Create bucket** <br>
 
 ```⚠️Note: Save the bucket's name, you'll need it later⚠️```
     ![drawing](./SS/lab2/9.png)
    
-  **STEP 3 : Create ADB (Autonomous Database)**
+ **STEP 3 : Create ADB (Autonomous Database)**
 
-1. Open the navigation menu and click **Oracle Database** &rarr; **Autonomous JSON Database** 
+1. Open the navigation menu and click **Oracle Database** &rarr; **Autonomous Database** 
 
-    ![drawing](./SS/step2/nav_bar_adb.png)
+    ![drawing](./SS/lab2/10.png)
 
 2. Click **Create Autonomous Database** (make sure you're in the right compartment)
 
-    ![drawing](./SS/step2/create_adb_button.png)
+    !(./SS/lab2/10.png)
 
 3. Enter the following:
     
-    1. **Compartment:** Select your compartment
-    2. **Display name:** Specify a user-friendly description that helps you easily identify the resource
-    3. **Database name:** Specify the database name (it must consist of letters and numbers only)
+    1. **Display name:** adb-demo
+    2. **Database name:** adbdbdemo
+    3. **Compartment:** demo
     4. For the workload type, choose **JSON**
-    5. For the deployment type, choose **Serverless**
-    6. Keep the database configuration the same
-    7. Set the password for the Admin database user in your new database **Don't use @ in password**
-    8. Choose network access **Secure access from allowed IPs and VCNs only** and select IP notation type **CIDR Block** with the Values **0.0.0.0/0**
-    9. Skip on the Provide contacts section and click **Create Autonomous Database**
+    5. Leave **Database Configuration** with default values
+    6. Set the password for the ADMIN database user in your new database ⚠️**Don't use @ in password**⚠️
+    7. **Access type:** Secure access from allowed IPs and VCNs only
+    8. Set **IP notation type:** CIDR block & **Value:** 0.0.0.0/0 ⚠️**For testing purpose only!**⚠️
+    9. Skip on the **Contacts** section and click **Create**
 
 4. Wait until your new Autonomous Database's status changes from Provisioning to Available.
 
 5.  Select the **Tool configuration** tab on the Autonomous Database details page.
 
-    ![drawing](./SS/step2/tool_configuration.png)
+    !(./SS/lab2/11.png)
 
 6. Scroll down the Tool configuration page until you find the **MongoDB API**.
 
-    ![drawing](./SS/step2/mongodb_api_connection_string.png)
+    !(./SS/lab2/12.png)
 
-8. Copy the connection string under **Public access URL** and save it - you'll need it later.
+8. Copy the connection string under **Public access URL** and edit it as follow: 
 
-    Instead of *[user:password@]* enter your database username and password (without the '[]' with the @)
+    Instead of **[user:password@]** enter your database username and password (Without the '[]'. With the @)
 
-    Instead of *[user]* enter your database user
+    Instead of **[user]** enter your database admin user
 
-    It should looks like: *mongodb://**user**:**password**@G0D09E...F.adb.il-jerusalem-1.oraclecloudapps.com:27017/**user**?authMechanism...true*
+    It should looks like: *mongodb://**ADMIN**:**password**@G0D09E...F.adb.il-jerusalem-1.oraclecloudapps.com:27017/**ADMIN**?authMechanism...true*
 
-10. Click **Database actions** and then **View all database actions**.
+    ``⚠️Note: Your string name may differ depending on your setup⚠️```
 
-    ![drawing](./SS/step2/db_actions_button.png)
+9. Save the full string - you'll need it later
+
+10. Scroll up & Click **Database actions** and then **View all database actions**.
+
+    !(./SS/lab2/13.png)
 
 11. Now, let's add a new collection to your database by clicking &nbsp; **{ } JSON** &nbsp; under the Development section and then **Open**.
 
