@@ -42,12 +42,13 @@
         1. **Name:** DG-demo
         2. **Description (optional):** Dynamic Group for demo compartment
         3. Under **Matching rules** click **Rule Builder** and follow:
-                1. **Include instances that match:** Any of the following
-                2. **Match instances with:** Commpartment OCID
-                3. **Value:** Enter your compartment OCID
-                4. Click **Add Rule**, 
+                   
+                    1. **Include instances that match:** Any of the following
+                    2. **Match instances with:** Commpartment OCID
+                    3. **Value:** Enter your compartment OCID
+                    4. Click **Add Rule**
 
-                ![drawing](./SS/lab2/5.png)
+            ![drawing](./SS/lab2/5.png)
                 
         4. The rule should look similar to the following:
         
