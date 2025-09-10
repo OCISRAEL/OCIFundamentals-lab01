@@ -17,67 +17,67 @@
 
 **STEP 1 : Create Dynamic Group and Policies**
 
-   1. First, make sure you're using the right region - Israel Central (Jerusalem)
+1. First, make sure you're using the right region - Israel Central (Jerusalem)
 
-      ![drawing](./SS/lab2/1.png)
+   ![drawing](./SS/lab2/1.png)
 
-   2. Open the navigation menu and click **Identity & Security** &rarr; **Identity** &rarr; **Compartments**
+2. Open the navigation menu and click **Identity & Security** → **Identity** → **Compartments**
 
-   3. Copy the full OCID string of 'demo' compatment. Save it - you'll need it later
+3. Copy the full OCID string of 'demo' compartment. Save it - you'll need it later
 
-      ![drawing](./SS/lab2/2.png)
+   ![drawing](./SS/lab2/2.png)
 
-   4. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Domains**
+4. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Domains**
 
-   5. Select **root** compartment, then select the **Default** domain
+5. Select **root** compartment, then select the **Default** domain
 
-        ![drawing](./SS/lab2/3.png)
+   ![drawing](./SS/lab2/3.png)
 
-   6. Move to **Dynamic groups** tab, then click **Create dynamic group**
+6. Move to **Dynamic groups** tab, then click **Create dynamic group**
 
-        ![drawing](./SS/lab2/4.png)
+   ![drawing](./SS/lab2/4.png)
 
-   7. Enter the following:
+7. Enter the following:
 
-        1. **Name:** DG-demo
-        2. **Description (optional):** Dynamic Group for demo compartment
-        3. Under **Matching rules** click **Rule Builder** and follow:
-                   
-            1. **Include instances that match:** Any of the following
-            2. **Match instances with:** Commpartment OCID
-            3. **Value:** Enter your compartment OCID
-            4. Click **Add Rule**
+   1. **Name:** DG-demo  
+   2. **Description (optional):** Dynamic Group for demo compartment  
+   3. Under **Matching rules** click **Rule Builder** and follow:  
 
-            ![drawing](./SS/lab2/5.png)
-                
-        4. The rule should look similar to the following:
+      1. **Include instances that match:** Any of the following  
+      2. **Match instances with:** Compartment OCID  
+      3. **Value:** Enter your compartment OCID  
+      4. Click **Add Rule**  
+
+      ![drawing](./SS/lab2/5.png)
+
+   4. The rule should look similar to the following:
+
+      ```
+      Any {instance.compartment.id = '<your_compartment_ocid>'}
+      ```
+
+    5. Click **Create**
+
+8. Next, we need to give the dynamic group IAM permissions. 
         
-            ```
-            Any {instance.compartment.id = '<your_compartment_ocid>'}
-            ```
-            
-        5. Click **Create**
+9. Select **Policies** on the left menu, then click **Create Policy**
 
-    8. Next, we need to give the dynamic group IAM permissions. 
-        
-    9. Select **Policies** on the left menu, then click **Create Policy**
+    ![drawing](./SS/lab2/6.png)
 
-        ![drawing](./SS/lab2/6.png)
+10. Enter the following:
 
-    10. Enter the following:
+    1. **Name:** dg-policy-demo
+    2. **Description (optional):** Dynamic Group IAM policy
+    3. **Compartment:** root
+    4. Switch the **Show manual editor** and add the following policies:
 
-        1. **Name:** dg-policy-demo
-        2. **Description (optional):** Dynamic Group IAM policy
-        3. **Compartment:** root
-        4. Switch the **Show manual editor** and add the following policies:
-
-                Allow dynamic-group <your_dg_name> to manage object-family in compartment <your_compartment_name>
-        
-        5. Click **Create**
+            Allow dynamic-group <your_dg_name> to manage object-family in compartment <your_compartment_name>
     
-        ```⚠️Note: The new policies will go into effect typically within 10 seconds*** ⚠️```
+    5. Click **Create**
 
-        ![drawing](./SS/lab2/7.png)
+    ```⚠️Note: The new policies will go into effect typically within 10 seconds*** ⚠️```
+
+    ![drawing](./SS/lab2/7.png)
 
 
 **STEP 2 : Create Bucket**
