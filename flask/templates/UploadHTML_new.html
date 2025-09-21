@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Upload Successful - OCI Fundamentals Lab</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    :root {
+      --oracle-red: #FF0000;
+      --oracle-dark: #333333;
+      --oracle-lightgray: #F5F5F5;
+      --oracle-white: #FFFFFF;
+    }
+    body {
+      background-color: var(--oracle-lightgray);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--oracle-dark);
+    }
+    .navbar {
+      background-color: var(--oracle-red);
+    }
+    .navbar-brand, .nav-link {
+      color: var(--oracle-white) !important;
+      font-weight: 600;
+    }
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    .card {
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: var(--oracle-white);
+    }
+    h1 {
+      color: var(--oracle-dark);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .btn-primary {
+      background-color: var(--oracle-red);
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #CC0000;
+    }
+    footer {
+      background-color: var(--oracle-dark);
+      color: var(--oracle-lightgray);
+      padding: 15px;
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+      <img src="./static/oracle-logo.png" alt="Oracle Logo"> OCI Fundamentals Lab
+    </a>
+  </nav>
+
+  <div class="container my-5">
+    <div class="card p-5 text-center">
+      <h1>✅ Upload Successful!</h1>
+      <p class="lead">Your file <strong>{{ name }}</strong> has been uploaded successfully.</p>
+      <p class="text-muted">It is now available in your files list.</p>
+      <a href="/" class="btn btn-primary mt-4">Back to Dashboard</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Oracle &mdash; OCI Fundamentals Lab</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
