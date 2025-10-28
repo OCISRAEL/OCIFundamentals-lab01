@@ -94,11 +94,11 @@
 ```⚠️Note: Save the bucket's name, you'll need it later⚠️```
     ![drawing](./SS/lab2/9.png)
    
- **STEP 3 : Create ADB (Autonomous Database)**
+ **STEP 3 : Create ADB (Autonomous AI Database)**
 
-1. Open the navigation menu and click **Oracle Database** &rarr; **Autonomous Database** 
+1. Open the navigation menu and click **Oracle AI Database** &rarr; **Autonomous AI Database** 
 
-2. Click **Create Autonomous Database** (make sure you're in the right compartment)
+2. Click **Create Autonomous AI Database** (make sure you're in the right compartment)
 
     ![drawing](./SS/lab2/10.png)
 

@@ -22,13 +22,13 @@
 ### Creating a Group
 ### Create a group in an OCI IAM identity domain
 
-1. Go back to the **Default** identity domain, click on **Groups**, and then on **Create group**
+1. Go back to the **Default** identity domain, click on **User management** tab,scroll down and then click on **Create group**
 
 2. Enter the following:
     1. **Name:** LabGroup
     2. **Description:** Lab Group
     3. Leave the **User can request access** checkbox uncheck
-    4. **Select users to assign this group:** Select the Lab User you created
+    4. Under **USERS**: Add the Lab User you created
 
 3. Click **Create**
 
