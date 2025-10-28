@@ -1,7 +1,7 @@
 # OCI Fundamentals Workshop
 
 
-<ins>**Lab 1 – DEMO LECTURES** </ins>
+<ins>**PART 1 – DEMO LECTURES** </ins>
 
 * **FOLLOW Those Steps First:**
 
@@ -13,7 +13,7 @@
     6. Block Volume [(Click here to create)](Demo%20Lectures/block_volume.md)
 
 
-<ins>**Lab 2 – CREATE YOUR APPLICATION** </ins>
+<ins>**PART 2 – CREATE YOUR APPLICATION** </ins>
 
 **STEP 1 : Create Dynamic Group and Policies**
 
