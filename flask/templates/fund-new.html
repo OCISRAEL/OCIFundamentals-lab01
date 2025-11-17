@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>OCI Fundamentals Workshop | File Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap & Bootstrap-Table CSS -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+          href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css" />
+
+    <!-- Icons (optional, for nice visuals) -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <style>
+      :root {
+        --oci-red: #f80000;
+        --oci-dark-red: #c71f2d;
+        --oci-bg: #0b1020;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        background: radial-gradient(circle at top left, #1c2340 0, #050814 55%, #020309 100%);
+        color: #f8f9fa;
+      }
+
+      /* NAVBAR */
+      .navbar-custom {
+        background: rgba(3, 7, 22, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      .navbar-brand span {
+        font-weight: 600;
+        letter-spacing: 0.04em;
+      }
+
+      .badge-env {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        padding: 0.2rem 0.55rem;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #ffd5da;
+      }
+
+      /* HERO */
+      .hero-section {
+        padding: 80px 15px 40px 15px;
+      }
+
+      .hero-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.3fr);
+        grid-gap: 40px;
+        align-items: center;
+      }
+
+      @media (max-width: 768px) {
+        .hero-inner {
+          grid-template-columns: minmax(0, 1fr);
+          text-align: center;
+        }
+      }
+
+      .hero-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 0.75rem;
+      }
+
+      .hero-title span {
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+        color: #cfd3ff;
+        max-width: 420px;
+      }
+
+      .hero-actions {
+        margin-top: 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        align-items: center;
+      }
+
+      .btn-pill {
+        border-radius: 999px;
+        padding: 0.55rem 1.4rem;
+        font-weight: 500;
+      }
+
+      .hero-meta {
+        margin-top: 1rem;
+        font-size: 0.85rem;
+        color: #9ea3c8;
+      }
+
+      .hero-panel {
+        border-radius: 1.25rem;
+        background: radial-gradient(circle at top left, #242b52 0, #151933 40%, #060816 100%);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+        padding: 1.25rem 1.25rem 1.5rem 1.25rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-panel::before {
+        content: "";
+        position: absolute;
+        inset: -100px;
+        background: radial-gradient(circle at top, rgba(255, 255, 255, 0.05) 0, transparent 50%);
+        opacity: 0.8;
+        pointer-events: none;
+      }
+
+      .hero-panel-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .hero-chip {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: #cfd3ff;
+      }
+
+      .stat-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-gap: 0.75rem;
+        margin-bottom: 0.75rem;
+      }
+
+      @media (max-width: 576px) {
+        .stat-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .stat-card {
+        background-color: rgba(5, 8, 25, 0.4);
+        border-radius: 0.9rem;
+        padding: 0.6rem 0.7rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .stat-label {
+        font-size: 0.7rem;
+        color: #a3a7d4;
+      }
+
+      .stat-value {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+
+      .hero-panel-footer {
+        margin-top: 0.2rem;
+        font-size: 0.75rem;
+        color: #9ea3c8;
+      }
+
+      /* MAIN CONTENT */
+      .main-section {
+        padding: 10px 15px 40px 15px;
+      }
+
+      .main-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.3fr);
+        grid-gap: 28px;
+      }
+
+      @media (max-width: 992px) {
+        .main-inner {
+          grid-template-columns: minmax(0, 1fr);
+        }
+      }
+
+      .card-glass {
+        background: rgba(3, 7, 30, 0.9);
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+        padding: 1.2rem 1.4rem 1.35rem 1.4rem;
+      }
+
+      .card-glass-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 0.8rem;
+      }
+
+      .card-glass-header h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0;
+      }
+
+      .card-glass-header small {
+        font-size: 0.75rem;
+        color: #a3a7d4;
+      }
+
+      .table-container {
+        background-color: rgba(5, 8, 25, 0.9);
+        border-radius: 0.8rem;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 0.6rem;
+      }
+
+      .bootstrap-table .fixed-table-container .table {
+        color: #f8f9fa;
+      }
+
+      .bootstrap-table .table thead th {
+        background: linear-gradient(135deg, #242b52, #161a3a);
+        border-color: rgba(255, 255, 255, 0.08);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      .bootstrap-table .table tbody tr {
+        background-color: transparent;
+      }
+
+      .bootstrap-table .table tbody tr:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.02);
+      }
+
+      .bootstrap-table .table tbody td {
+        border-top-color: rgba(255, 255, 255, 0.05);
+      }
+
+      .table a {
+        color: #ffb3c1;
+      }
+
+      .table a:hover {
+        color: #ffe5ea;
+        text-decoration: underline;
+      }
+
+      .search-label {
+        font-size: 0.8rem;
+        color: #9ea3c8;
+        margin-bottom: 0.25rem;
+      }
+
+      .how-it-works-list {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0.8rem;
+      }
+
+      .how-it-works-list li {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 0.4rem;
+        font-size: 0.9rem;
+      }
+
+      .how-it-works-list i {
+        margin-right: 0.5rem;
+        margin-top: 0.15rem;
+        color: #ffb3c1;
+      }
+
+      .tag-pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.15rem 0.55rem;
+        border-radius: 999px;
+        font-size: 0.7rem;
+        background-color: rgba(255, 255, 255, 0.06);
+        color: #e3e5ff;
+        margin: 0.1rem;
+      }
+
+      /* FOOTER */
+      .footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 0.85rem 15px 1.2rem 15px;
+        margin-top: 10px;
+      }
+
+      .footer-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.78rem;
+        color: #9ea3c8;
+      }
+
+      @media (max-width: 576px) {
+        .footer-inner {
+          flex-direction: column;
+          text-align: center;
+          gap: 0.25rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <div class="container-fluid" style="max-width: 1100px;">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <i class="fas fa-cloud-upload-alt mr-2"></i>
+          <span>OCI Fundamentals Workshop</span>
+        </a>
+        <div class="ml-auto d-flex align-items-center">
+          <span class="badge-env d-none d-sm-inline-block mr-2">Oracle IL</span>
+          <button class="btn btn-outline-light btn-sm btn-pill"
+                  data-toggle="modal"
+                  data-target="#myModal">
+            <i class="fas fa-file-upload mr-1"></i> Upload
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="hero-inner">
+        <div>
+          <h1 class="hero-title">
+            Your central hub for
+            <span>OCI workshop files</span>.
+          </h1>
+          <p class="hero-subtitle">
+            Upload, track and access all OCI Fundamentals workshop materials
+            from one clean, professional portal.
+          </p>
+
+          <div class="hero-actions">
+            <button type="button"
+                    class="btn btn-primary btn-pill"
+                    data-toggle="modal"
+                    data-target="#myModal">
+              <i class="fas fa-cloud-upload-alt mr-1"></i> Upload a file
+            </button>
+            <a href="#files-section"
+               class="btn btn-outline-light btn-pill">
+              <i class="fas fa-folder-open mr-1"></i> View existing files
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            Managed by <strong>Oracle IL</strong> • Designed for
+            <strong>hands-on cloud enablement</strong>.
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-panel-header">
+            <div>
+              <div class="hero-chip">Workshop snapshot</div>
+              <div style="font-size: 0.85rem; color: #e3e5ff;">
+                Live view of current uploaded content.
+              </div>
+            </div>
+            <i class="fas fa-chart-line" style="color: #ffb3c1;"></i>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat-card">
+              <div class="stat-label">Total files</div>
+              <div class="stat-value" id="stat-total-files">0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Latest upload</div>
+              <div class="stat-value" id="stat-latest-upload">N/A</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Searchable table</div>
+              <div class="stat-value">
+                <i class="fas fa-check-circle" style="color: #9cf5d0;"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-panel-footer">
+            Tip: Use the search box below to quickly find a file by
+            <strong>name</strong> or <strong>date</strong>.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-section">
+      <div class="main-inner">
+        <!-- FILE TABLE -->
+        <section id="files-section" class="card-glass">
+          <div class="card-glass-header">
+            <h2><i class="fas fa-folder-open mr-2"></i>Workshop Files</h2>
+            <small>Search, sort and open uploaded content.</small>
+          </div>
+
+          <div class="mb-2">
+            <div class="search-label">Quick search</div>
+            <!-- bootstrap-table adds its own search box; this label just explains it -->
+          </div>
+
+          <div class="table-container">
+            <table
+              id="filesTable"
+              class="table table-hover"
+              data-toggle="table"
+              data-search="true"
+              data-pagination="true"
+              data-page-size="10"
+              data-page-list="[5, 10, 25, 50, 100]"
+            >
+              <thead>
+                <tr>
+                  <th data-field="Name" data-sortable="true">Name</th>
+                  <th data-field="Date" data-sortable="true">Date</th>
+                  <th data-field="Link" data-sortable="true">Link</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </section>
+
+        <!-- SIDE PANEL: HOW IT WORKS -->
+        <aside class="card-glass">
+          <div class="card-glass-header">
+            <h2><i class="fas fa-info-circle mr-2"></i>How it works</h2>
+            <small>Simple flow for every workshop run.</small>
+          </div>
+
+          <ul class="how-it-works-list">
+            <li>
+              <i class="fas fa-1"></i>
+              <span>
+                Click <strong>Upload a file</strong> and choose your local
+                workshop artifact.
+              </span>
+            </li>
+            <li>
+              <i class="fas fa-2"></i>
+              <span>
+                The file is securely processed by the backend Python script and
+                stored according to your environment setup.
+              </span>
+            </li>
+            <li>
+              <i class="fas fa-3"></i>
+              <span>
+                A success page confirms the upload and the file appears in the
+                <strong>Workshop Files</strong> table.
+              </span>
+            </li>
+          </ul>
+
+          <hr class="border-secondary" />
+
+          <div style="font-size: 0.85rem; color: #cfd3ff; margin-bottom: 0.5rem;">
+            This portal is designed to be reused across multiple workshops,
+            teams and environments.
+          </div>
+
+          <div>
+            <span class="tag-pill">
+              <i class="fas fa-shield-alt mr-1"></i> OCI native
+            </span>
+            <span class="tag-pill">
+              <i class="fas fa-bolt mr-1"></i> Fast onboarding
+            </span>
+            <span class="tag-pill">
+              <i class="fas fa-users mr-1"></i> Team-friendly
+            </span>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- UPLOAD MODAL (kept exactly wired the same) -->
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+           aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="myModallLabel">
+                <i class="fas fa-file-upload mr-1"></i> Upload a new file
+              </h5>
+              <button type="button" class="close" data-dismiss="modal"
+                      aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="myFile">Choose a file</label>
+                <input type="file"
+                       class="form-control-file"
+                       id="myFile"
+                       name="myFile"
+                       required />
+                <small class="form-text text-muted">
+                  Select the file you want to share with the workshop participants.
+                </small>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button"
+                      class="btn btn-outline-secondary btn-sm btn-pill"
+                      data-dismiss="modal">
+                Cancel
+              </button>
+              <button type="submit"
+                      class="btn btn-primary btn-sm btn-pill"
+                      id="myBtn">
+                <i class="fas fa-cloud-upload-alt mr-1"></i> Upload
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <span>OCI Fundamentals Workshop – File Portal</span>
+        <span>&copy; ORACLE IL</span>
+      </div>
+    </footer>
+
+    <!-- JS: jQuery, Popper, Bootstrap, Bootstrap-Table -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+
+    <script type="text/javascript">
+      // Keep the same Jinja variable & structure so Python side keeps working
+      const temp = '{{data | tojson}}';
+      let mydata = [];
+
+      try {
+        mydata = JSON.parse(temp);
+      } catch (e) {
+        console.error('Failed to parse data JSON:', e);
+        mydata = [];
+      }
+
+      $(document).ready(function () {
+        // Initialize table with data from backend
+        $('#filesTable').bootstrapTable({
+          data: mydata
+        });
+
+        // Basic stats for the hero panel
+        const totalFiles = Array.isArray(mydata) ? mydata.length : 0;
+        let latestUpload = 'N/A';
+
+        if (totalFiles > 0 && mydata[0].Date) {
+          latestUpload = mydata[0].Date;
+        }
+
+        document.getElementById('stat-total-files').textContent = totalFiles;
+        document.getElementById('stat-latest-upload').textContent = latestUpload;
+      });
+    </script>
+  </body>
+</html>
